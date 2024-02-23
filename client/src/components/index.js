@@ -5,6 +5,7 @@ export { FormRowSelect } from "./FormRowSelect";
 export { Job } from "./Job";
 export { JobInfo } from "./JobInfo";
 export { JobsContainer } from "./JobsContainer";
+export { Loading } from "./Loading";
 export { Logo } from "./Logo";
 export { LogoutContainer } from "./LogoutContainer";
 export { Navbar } from "./Navbar";
