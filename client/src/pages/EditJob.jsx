@@ -16,11 +16,12 @@ export const loader = async ({ params }) => {
   }
 };
 
-export const action = async ({ request, params }) => {
+export const action = (queryClient) => async ({ request, params }) => {
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
   try {
     await customFetch.patch(`/jobs/${params.id}`, data);
+    queryClient.invalidateQueries(["jobs"]);
     toast.success("Job edited successfully");
     return redirect("/dashboard/all-jobs");
   } catch (error) {

@@ -1,5 +1,6 @@
 export { BigSidebar } from "./BigSidebar";
 export { ChartsContainer } from "./ChartsContainer";
+export { ErrorElement } from "./ErrorElement";
 export { FormRow } from "./FormRow";
 export { FormRowSelect } from "./FormRowSelect";
 export { Job } from "./Job";
